@@ -1,27 +1,27 @@
-####1. Building an image
+#### 1. Building an image
 docker build -t <image-name> <directory path for Dockerfile> <br/>
 docker build -t my-apache .
 
-####2. Listing of all images
+#### 2. Listing of all images
 docker images
 
-####3. Running a container from image built above
+#### 3. Running a container from image built above
 docker run -itd --name <container-name> -p 7777:80 <imageId or image name with tag> <br>
 docker run -itd --name my-apache-container -p 7777:80 my-apache:latest
 
-####4. View all running containers
+#### 4. View all running containers
 docker ps
 
-####5. View all containers running and stopped
+#### 5. View all containers running and stopped
 docker ps -a
 
-####6. Logging into running container
+#### 6. Logging into running container
 docker exec -it <container-id> /bin/bash
 
-####7. View logs of container
+#### 7. View logs of container
 docker logs <container-id>
 
-####8. Login into docker hub and push images to repository
+#### 8. Login into docker hub and push images to repository
 docker login
 docker tag <current-image>:<tag> <repository-name>/<image-name>:<tag> <br>
 docker push <repository-name>/<image-name>:<tag>
