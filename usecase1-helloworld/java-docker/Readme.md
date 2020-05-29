@@ -26,13 +26,13 @@ docker logs &lt;container-id&gt;
 #### 8. Stop running container
 docker stop &lt;container-id&gt;
 
-####9. Remove container
+#### 9. Remove container
 docker rm &lt;container-id&gt; <br>
 
 Use -f to forcefully remove container.<br>
 Can be used when container is in use and you want to remove it forcefully.<br>
 docker rm -f &lt;container-id&gt;
 
-####10. Remove image
+#### 10. Remove image
 docker image rm &lt;image-name-with-tage OR image-id&gt; <br>
 docker image rm my-ubuntu:latest
