@@ -42,3 +42,12 @@ docker image rm my-nginx:latest
 
 #### 12. Pull image from docker hub
 docker pull &lt;repository-name&gt;/&lt;image-name&gt;:&lt;tag&gt;
+
+#### 13. Remove all dangling images
+docker image prune
+
+#### 14. Remove both dangling images and images not used by container
+docker image prune -a
+
+#### 15. Remove all stopped container
+docker container prune

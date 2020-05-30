@@ -18,8 +18,7 @@ RUN apt-get install -y vim
 #INSTALL ALL the updates again and install MAVEN and JDK 8
 RUN apt-get update && apt-get install -y default-jdk maven
 
-# ADD a directory called docker-git-hello-world inside the UBUNTU IMAGE where you will be moving all of these files under this
-# DIRECTORY to
+# ADD a directory called java-docker inside the UBUNTU IMAGE where you will be moving all of these files
 ADD . /usr/local/java-docker
 
 # Go to project directory and Maven assembly will package the project into a JAR FILE which can be executed
