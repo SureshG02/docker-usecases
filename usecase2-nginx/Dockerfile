@@ -2,7 +2,7 @@
 FROM nginx:1.14
 
 #Author of the Docker File
-LABEL "Maintainer"="Pictolearn"
+LABEL "Maintainer"="Suresh"
 
 # Copy httpd.conf with changes to the root directory
 COPY default.conf /etc/nginx/conf.d/
